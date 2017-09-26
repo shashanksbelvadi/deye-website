@@ -112,7 +112,7 @@ function getFilteredPhotos(responseData) {
   while (randomPhotoList.length < numPhotos) {
     var num = Math.floor(Math.random() * limit);
 
-    if (!randomPhotoList.includes(num) && responseData[num].album.name === albumName) {
+    if (!randomNumList.includes(num) && responseData[num].album.name === albumName) {
       var photoObject = {
         "url": responseData[num].images[imageSizeIndex].source,
         "height": responseData[num].images[imageSizeIndex].height,
