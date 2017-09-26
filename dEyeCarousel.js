@@ -90,15 +90,13 @@ function setCarouselPhotos(responseData) {
   console.log(randomPhotoList);
 
   for (var i = 0; i < randomPhotoList.length; i++) {
+    var container = document.getElementById("container");
     var imageURL = randomPhotoList[i].url;
     var imgHeight = randomPhotoList[i].url.height;
     var imgWidth = randomPhotoList[i].url.width;
     var imageDiv = document.getElementById("image" + i);
 
     imageDiv.setAttribute("src", imageURL);
-    //imageDiv.setAttribute("style", "height:" + imgHeight + "px;width:" + imgWidth + "px;");
-    //imageDiv.style.height = parseInt(imgHeight);
-    //imageDiv.style.width = parseInt(imgWidth);
   }
 }
 
